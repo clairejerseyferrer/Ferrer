@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d2c1s3qmdi4ti" path="res://scenes/player.tscn" id="3_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://cvqvw7ypmtpn2" path="res://scenes/hud.tscn" id="4_tipki"]
 [ext_resource type="AudioStream" uid="uid://td2mgko63p61" path="res://art/gameover.wav" id="5_85g3d"]
+[ext_resource type="Texture2D" uid="uid://sti1vvjvvlh" path="res://art/grid.jpg" id="6_tefeu"]
 
 [sub_resource type="Curve2D" id="Curve2D_0xm2m"]
 _data = {
@@ -33,13 +34,14 @@ loop = true
 script = ExtResource("1_tbgi4")
 mob_scene = ExtResource("2_tefeu")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=4102126]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1033814977]
+anchors_preset = -1
+offset_right = 625.0
+offset_bottom = 1200.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.43529412, 0.654902, 1, 1)
+scale = Vector2(0.77, 0.602)
+texture = ExtResource("6_tefeu")
 
 [node name="Player" parent="." unique_id=924040943 instance=ExtResource("3_o6xl0")]
 
